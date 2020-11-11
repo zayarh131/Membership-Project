@@ -103,12 +103,64 @@ input, select {
 
 /*MY CODE*/
 
+@font-face {
+    font-family: "Aristotelica";
+    src: url(Font/zetafonts-aristotelica-pro-display-extralight.otf);
+}
+
+:root {
+    --green: #58b747;
+    --bar: #90af85;
+    --softgreen: #e5f4ef;
+    --heavygreen: #4c8880;
+    --grey: #2e434e;
+    --delete: #e6b8af;
+    --edit: #cfe2f3; 
+}
+
 body {
     background-color: #e5e5e5;
+}
+
+body .main-content {
+    margin: 0 auto;
+    max-width: 600px;
+    height: fit-content;
+}
+
+header {
     position: relative;
 }
 
-main {
+header img {
     position: absolute;
+    z-index: -199;
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 10px 10px 0px 0px;
 }
+
+header div {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    background-color:var(--grey);
+    opacity: 50%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+header h1 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: Poppins;
+    z-index: 99;
+}
+
 
