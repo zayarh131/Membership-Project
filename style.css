@@ -105,5 +105,10 @@ input, select {
 
 body {
     background-color: #e5e5e5;
+    position: relative;
+}
+
+main {
+    position: absolute;
 }
 
