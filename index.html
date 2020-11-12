@@ -16,12 +16,21 @@
             <div></div>
             <h1 class="middle">SIGN IN</h1>
         </header>
+
         <main>
             <form action="member.html" method="POST">
-                <label>Username <input type="email" placeholder="Enter your username" name="email"></label>
-                <label>Password <input type="password" placeholder="Enter your password" name="password"></label>
-                <label> <input type="checkbox" ><span class="checkmark"></span>Remember me</label>
-                <label> <a href="forgotpassword.html">Forgot Password?</a></label>
+                <div class="username-password">
+                    <label>Username <input type="email" placeholder="Enter your username" name="email"></label>
+                    <label>Password <input type="password" placeholder="Enter your password" name="password"></label>
+                </div>
+                <div class="checkedbox">
+                    <div>
+                        <input type="checkbox" ><span class="checkmark"></span>
+                        <label>Remember me</label>
+                    </div>
+                    
+                    <label> <a href="forgotpassword.html">Forgot Password?</a></label>
+                </div>
                 <button type="submit">Login</button>
             </form>
         </main>
