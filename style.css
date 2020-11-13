@@ -187,11 +187,10 @@ main form .username-password {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    align-content: center;
 }
 
 main form input {
-    width: 310px;
+    width: 78%;
     border: none;
     outline: none;
     border-bottom: 1px solid var(--bar);
@@ -218,6 +217,7 @@ main form input:focus:-ms-input-placeholder {
 }
 
 main form .username-password div {
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -230,10 +230,11 @@ main form .username-password div label {
     font-weight: 300;
     font-size: 14px;
     padding-right: 30px;
+    padding-bottom: 5px;
 }
 
 main form .checkedbox {
-    width: 400px;
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -263,3 +264,14 @@ main form .checkedbox div label {
     padding-left: 5px;
 }
 
+@media screen and (max-width: 648px) {
+    main form input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main form .username-password div {
+        width: 100%;
+    }
+}
