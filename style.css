@@ -191,16 +191,16 @@ main form .username-password {
 }
 
 main form input {
-    width: 400px;
+    width: 300px;
     border: none;
     outline: none;
     border-bottom: 1px solid var(--bar);
-    padding: 15px 30px;
+    padding: 15px 10px;
 }
 
 main form input:focus {
     border: none;
-    border-bottom: 2px solid var(--bar);
+    border-bottom: 1px solid var(--green);
 }
 
 main form input::placeholder {
@@ -215,6 +215,20 @@ main form input:focus::placeholder {
 
 main form input:focus:-ms-input-placeholder {
     color: transparent;
+}
+
+main form .username-password div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px 0px 0px;
+}
+
+main form .username-password div label {
+    font-family: Poppins, Aristotelica, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    padding-right: 30px;
 }
 
 main form .checkedbox {
