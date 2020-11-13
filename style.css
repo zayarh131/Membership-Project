@@ -191,7 +191,7 @@ main form .username-password {
 }
 
 main form input {
-    width: 350px;
+    width: 310px;
     border: none;
     outline: none;
     border-bottom: 1px solid var(--bar);
