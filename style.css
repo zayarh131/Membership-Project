@@ -255,6 +255,7 @@ main form .checkedbox label {
     font-weight: 300;
     font-size: 12px;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 main form .checkedbox a {
