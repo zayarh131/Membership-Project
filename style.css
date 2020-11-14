@@ -239,23 +239,11 @@ main form .username-password div label {
 }
 
 main form .checkedbox {
-    width: 100%;
+    width: 62%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-}
-
-main form .checkedbox div {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-main form .checkedbox div input[type=checkbox] {
-    width: 15px;
-    height: 15px;
+    margin-left: 24%;
 }
 
 main form .checkedbox label {
@@ -263,21 +251,98 @@ main form .checkedbox label {
     font-family: Poppins, Aristotelica, Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 12px;
+    width: fit-content;
 }
 
-main form .checkedbox div label {
-    padding-left: 5px;
+main form .checkedbox a {
+    margin-top: 4px;
+    font-family: Poppins, Aristotelica, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
 }
+
+/* checkedbox - start */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 0.5px solid #ccc;
+    border-radius: 2px;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: transparent;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--green);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* checkedbox - end */
 
 @media screen and (max-width: 648px) {
     main form input {
         width: 100%;
+    }
+
+    main form .checkedbox {
+        width: 78%;
+        margin-left: 10%;
+        margin-top: 40px;
     }
 }
 
 @media screen and (max-width: 500px) {
     main form .username-password div {
         width: 100%;
+    }
+
+    main form .checkedbox {
+        width: 100%;
+        margin-left: 0;
+        padding-right: 15px;
+        margin-top: 40px;
     }
 }
 @media screen and (max-width: 730px) {
