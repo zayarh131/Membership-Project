@@ -133,7 +133,7 @@ body .main-content {
     -webkit-box-shadow: 0 0 10px 2px #888;
     -moz-box-shadow: 0 0 10px 2px #888;
     box-shadow: 0 0 10px 2px #888;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 header {
@@ -179,12 +179,14 @@ body .main-content main {
     margin-top: 150px;
     background-color: white;
     width: 100%;
+    border-radius: 0px 0px 15px 15px;
 }
 
 main form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    
 }
 
 main form .username-password {
@@ -260,6 +262,13 @@ main form .checkedbox a {
     font-family: Poppins, Aristotelica, Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 12px;
+    color: #333;
+    transition: 200ms 50ms ease-in-out;
+}
+
+main form .checkedbox a:hover {
+    text-decoration: none;
+    color: var(--green)
 }
 
 /* checkedbox - start */
@@ -321,6 +330,18 @@ main form .checkedbox a {
     transform: rotate(45deg);
 }
 /* checkedbox - end */
+
+main form button {
+    font-family: Poppins, Aristotelica, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 15px 40px;
+    margin: 30px auto 80px;
+    width: fit-content;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--green);
+    color: white;
+}
 
 @media screen and (max-width: 648px) {
     main form input {
