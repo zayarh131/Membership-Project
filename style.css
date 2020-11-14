@@ -199,6 +199,7 @@ main form input {
     border: none;
     outline: none;
     border-bottom: 1px solid var(--bar);
+    border-radius: 0px;
     padding: 15px 10px;
 }
 
