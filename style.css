@@ -232,7 +232,7 @@ main form .username-password div {
     flex-wrap: wrap;
     align-items: center;
     padding: 0px 15px;
-    margin: 50px 0px 0px;
+    margin: 25px 0px 0px;
 }
 
 main form .username-password span {
@@ -240,6 +240,7 @@ main form .username-password span {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     color: #ff0f0f;
     margin-top: 15px;
+    padding: 0px 15px;
 }
 
 main form .username-password div label {
