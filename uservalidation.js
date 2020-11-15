@@ -6,7 +6,7 @@ function validateUsername() {
     usernameError.innerHTML="";
     passwordError.innerHTML="";
     var expr = /^[a-zA-Z0-9_]{6,20}$/;
-    var expr2 = /^[a-zA-Z0-9_$%@!#^&]{8,20}$/;
+    var expr2 = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
     if ( !expr.test(username)) {
         usernameError.innerHTML= "Only Alphabets, Numbers and Underscore and between 6 to 20 characters.";
     } else if (!expr2.test(password)) {
