@@ -203,6 +203,8 @@ main form input {
     border-bottom: 1px solid var(--bar);
     border-radius: 0px;
     padding: 15px 10px;
+    font-family: Poppins, Aristotelica, Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 main form input:focus {
@@ -231,6 +233,13 @@ main form .username-password div {
     align-items: center;
     padding: 0px 15px;
     margin: 50px 0px 0px;
+}
+
+main form .username-password span {
+    font-size: 12px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: #ff0f0f;
+    margin-top: 15px;
 }
 
 main form .username-password div label {
@@ -332,7 +341,7 @@ main form .checkedbox a:hover {
 }
 /* checkedbox - end */
 
-main form button {
+main form input[type=button] {
     font-family: Poppins, Aristotelica, Arial, Helvetica, sans-serif;
     font-size: 15px;
     padding: 15px 40px;

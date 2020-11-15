@@ -22,12 +22,14 @@
                 <div class="username-password">
                     <div>
                         <label>Username</label>
-                        <input type="email" placeholder="Enter your username" name="email">
+                        <input type="text" id="username" placeholder="Enter your username" name="email">
                     </div>
+                    <span id="invalid_username"></span>
                     <div>
                         <label>Password</label>
-                        <input type="password" placeholder="Enter your password" name="password">
+                        <input type="password" id="password" placeholder="Enter your password" name="password">
                     </div>
+                    <span id="invalid_password"></span>
                 </div>
                 <div class="checkedbox">
                     <label class="container">Remember me
@@ -37,10 +39,11 @@
                     
                     <a href="forgotpassword.html">Forgot Password?</a>
                 </div>
-                <button type="submit">Login</button>
+                <!-- <button type="submit" id="btnValidate" onclick="validateUsername()">Login</button> -->
+                <input type="button" id="btnValidate" value="login" onclick="validateUsername()" />
             </form>
         </main>
-        
+        <script src="uservalidation.js"></script>
     </div>
 </body>
 </html>
