@@ -349,6 +349,7 @@ main form input[type=button] {
     padding: 15px 40px;
     margin: 30px auto 50px;
     width: fit-content;
+    width: -moz-fit-content;
     border: none;
     border-radius: 100px;
     background-color: var(--green);

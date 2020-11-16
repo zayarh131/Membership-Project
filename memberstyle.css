@@ -152,6 +152,7 @@ body form div .userinput {
     border-color: var(--green);
     font-family: Poppins, Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
+    width: 210px;
 }
 
 body form div .userinput:focus {
