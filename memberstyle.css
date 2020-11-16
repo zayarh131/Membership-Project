@@ -1,0 +1,193 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*MY CODE*/
+
+@font-face {
+    font-family: "Aristotelica";
+    src: url(Font/zetafonts-aristotelica-pro-display-extralight.otf);
+}
+
+*{
+    font-family: Aristotelica, Poppins, Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+:root {
+    --green: #58b747;
+    --bar: #90af85;
+    --softgreen: #e5f4ef;
+    --heavygreen: #4c8880;
+    --grey: #2e434e;
+    --delete: #e6b8af;
+    --edit: #cfe2f3; 
+}
+
+body h1 {
+    font-family: Aristotelica, Poppins, Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 50px 0px;
+    letter-spacing: 2px;
+}
+
+body form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: center;
+}
+
+body form div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+body form div label {
+    font-size: 20px;
+}
+
+body form div .userinput {
+    border-color: var(--green);
+}
+
+body form div .userinput:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 0.2rem rgba(88,183,71,.25);
+}
+
+body form div .custom-select {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    width: 210px;
+}
+
+body form button {
+    width: 100px;
+    height: 38px;
+    border: none;
+    background-color: var(--green);
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    border-radius: .25rem;
+    color: white;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-top: 30px;
+}
+
+body form button:hover {
+    box-shadow: 0 0 0 0.2rem rgba(88,183,71,.5);
+
+}
+
+@media screen and (max-width: 768px) {
+    body form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 400px;
+        align-items: center;
+        align-content: center;
+    }
+}
