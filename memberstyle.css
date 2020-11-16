@@ -150,6 +150,8 @@ body form div label {
 
 body form div .userinput {
     border-color: var(--green);
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
 }
 
 body form div .userinput:focus {
