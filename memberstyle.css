@@ -144,6 +144,10 @@ body form div {
     flex-wrap: wrap;
 }
 
+body form .lastchild {
+    align-items: flex-start;
+}
+
 body form div label {
     font-size: 20px;
 }
@@ -192,5 +196,13 @@ body form button:hover {
         height: 400px;
         align-items: center;
         align-content: center;
+    }
+
+    body form div .userinput {
+        width: 100%;
+    }
+
+    body form .lastchild {
+        align-items: center;
     }
 }
