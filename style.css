@@ -134,6 +134,7 @@ body .main-content {
     -moz-box-shadow: 0 0 10px 2px #888;
     box-shadow: 0 0 10px 2px #888;
     border-radius: 15px 15px 15px 15px;
+    margin-bottom: 100px;
 }
 
 header {
