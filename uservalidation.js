@@ -15,3 +15,11 @@ function validateUsername() {
         window.location.href = "/member.html";
     }
 }
+
+function editRow() {
+
+}
+
+function deleteRow() {
+    
+}
