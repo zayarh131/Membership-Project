@@ -23,14 +23,14 @@
         <div class="lastchild">
             <label for="teamID">Team</label>
             <select class="form-control userinput custom-select" name="team" id="teamID">
-                <option value="0">Choose...</option>
-                <option value="1">BE</option>
-                <option value="2">FE</option>
-                <option value="3">DB</option>
-                <option value="4">DK</option>
+                <option value="none">Choose...</option>
+                <option value="BE">BE</option>
+                <option value="FE">FE</option>
+                <option value="DB">DB</option>
+                <option value="DK">DK</option>
             </select>
         </div>
-        <button type="button">+ Add</button>
+        <button type="button" onclick="addRow()">+ Add</button>
     </form>
     <h1 class="container-sm h1-style">List of Members</h1>
 
@@ -42,7 +42,7 @@
                 <th scope="col">Team</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="tablebody">
             <tr>
                 <td>ZayarHtet</td>
                 <td>Zayar Htet</td>
@@ -54,9 +54,10 @@
                 <td>ohksoehtet</td>
                 <td>Ohk Soe Htet</td>
                 <td>FE</td>
+                <td><button onclick="editRow()"><i class="fas fa-pen"></i></button></td>
+                <td><button onclick="deleteRow()"><i class="fas fa-trash"></i></button></td>
             </tr>
         </tbody>
-
     </table>
     <script src="/uservalidation.js"></script>
 </body>
