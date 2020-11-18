@@ -196,6 +196,12 @@ body .h1-style {
     margin-bottom: 30px;
 }
 
+body .tablestyle {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
 table, th, td {
     border: 1px solid rgba(0,0,0,0.3);
     border-collapse: collapse;
@@ -270,5 +276,17 @@ table tbody tr td button:last-child:hover {
         width: auto;
         margin-left: 15px;
         margin-right: 15px;
+    }
+
+    body .tablestyle {
+        width: auto;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    table tbody tr td button {
+        margin-top:5px;
     }
 }
