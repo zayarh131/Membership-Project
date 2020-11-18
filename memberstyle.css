@@ -188,6 +188,14 @@ body form button:hover {
 
 }
 
+body form span {
+    font-size: 12px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: #ff0f0f;
+    margin-top: 15px;
+    display: none;
+}
+
 body .h1-style {
     text-align: left;
     padding-bottom: 20px;
