@@ -21,10 +21,9 @@ function addRow() {
     var username = document.getElementById("usernameID").value;
     var name = document.getElementById("nameID").value;
     var team = document.getElementById("teamID").value;
-    var edit = '<button onclick="editRow()"><i class="fas fa-pen"></i></button>';
-    var remove = '<button onclick="deleteRow(this)"><i class="fas fa-trash"></i></button>';
+    var edit = '<button onclick="editRow()"><i class="fas fa-pen"></i></button><button onclick="deleteRow(this)"><i class="fas fa-trash"></i></button>';
 
-    var valueArray = [username,name,team,edit,remove];
+    var valueArray = [username,name,team,edit];
 
     var tr = document.createElement("tr");
 
