@@ -46,6 +46,6 @@ function editRow() {
     
 }
 
-function deleteRow() {
-    
+function deleteRow(e) {
+    e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode);
 }
