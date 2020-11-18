@@ -20,10 +20,11 @@ function validateUsername() {
 
 
 function addRow() {
+    document.getElementById('addbutton').innerHTML= '+ Add';
     var username = document.getElementById("usernameID").value;
     var name = document.getElementById("nameID").value;
     var team = document.getElementById("teamID").value;
-    var edit = '<button onclick="editRow()"><i class="fas fa-pen"></i></button> <button onclick="deleteRow(this)"><i class="fas fa-trash"></i></button>';
+    var edit = '<button onclick="editRow(this)"><i class="fas fa-pen"></i></button> <button onclick="deleteRow(this)"><i class="fas fa-trash"></i></button>';
 
     username.trim();
     name.trim();
@@ -54,8 +55,19 @@ function addRow() {
     document.getElementById("teamID").value="none";
 }
 
-function editRow() {
-    
+function editRow(e) {
+
+    var username = e.parentNode.parentNode.children[0].innerHTML;
+    var name = e.parentNode.parentNode.children[1].innerHTML;
+    var team = e.parentNode.parentNode.children[2].innerHTML;
+
+    e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode);
+
+    document.getElementById("usernameID").value=username;
+    document.getElementById("nameID").value=name;
+    document.getElementById("teamID").value=team;
+
+    document.getElementById('addbutton').innerHTML = 'DONE';
 }
 
 function deleteRow(e) {

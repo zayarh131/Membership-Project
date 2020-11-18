@@ -30,7 +30,7 @@
                 <option value="DK">DK</option>
             </select>
         </div>
-        <button type="button" onclick="addRow()">+ Add</button>
+        <button type="button" onclick="addRow()" id="addbutton">+ Add</button>
         <span id="invalid"></span>
     </form>
     <h1 class="container-sm h1-style">List of Members</h1>
@@ -50,7 +50,7 @@
                 <td>Zayar Htet</td>
                 <td>FE</td>
                 <td>
-                    <button onclick="editRow()"><i class="fas fa-pen"></i></button>
+                    <button onclick="editRow(this)"><i class="fas fa-pen"></i></button>
                     <button onclick="deleteRow(this)"><i class="fas fa-trash"></i></button>
                 </td>
             </tr>
@@ -59,7 +59,7 @@
                 <td>Ohk Soe Htet</td>
                 <td>FE</td>
                 <td>
-                    <button onclick="editRow()"><i class="fas fa-pen"></i></button>
+                    <button onclick="editRow(this)"><i class="fas fa-pen"></i></button>
                     <button onclick="deleteRow(this)"><i class="fas fa-trash"></i></button>
                 </td>
                 
