@@ -33,7 +33,7 @@ function addRow() {
     
     if(username == "" || name== "" || (username == "" && name == "")) {
         invalid.style.display="block";
-        invalid.innerHTML="Please Enter Username and Name";
+        invalid.innerHTML="Please Enter both Username and Name";
     } else {
         invalid.style.display="none";
         var valueArray = [username,name,team,edit];
@@ -49,6 +49,7 @@ function addRow() {
     
         document.querySelector("tbody").appendChild(tr);
     }
+
 
     document.getElementById("usernameID").value="";
     document.getElementById("nameID").value="";
